@@ -1,0 +1,59 @@
+.home-section { /* Example: if home-section is a direct child of App.js */
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px; /* Adjust if your navbar height in style.css is different */
+  padding-bottom: 30px;
+  z-index: 1; /* Ensure it's above the particle background */
+}
+
+.home-content { /* Example */
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.home-header { /* Example */
+  text-align: left;
+  padding-top: 50px;
+}
+
+.heading {
+  font-size: 2.4em !important;
+  padding-left: 50px !important;
+  color: var(--text-primary); /* Use variables from style.css */
+}
+
+.heading-name {
+  font-size: 2.5em !important;
+  padding-left: 45px !important;
+  color: var(--text-primary); /* Use variables from style.css */
+}
+
+.main-name {
+  color: var(--accent-blue); /* Use React's blue, or your defined accent-blue */
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate(0.0deg) }
+  100% { transform: rotate(0.0deg) }
+}
+
+/* All global variables, navbar, bento, general particle, etc. styles should be in style.css */
+/* The .blue class definition is now handled by .about-section .blue in style.css */
