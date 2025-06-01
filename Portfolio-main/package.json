@@ -2,7 +2,7 @@
   "name": "portfolio-main",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://noneual.github.io/portfolio",
+  "homepage": "https://noneual.github.io/portfolio-main",
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.2",
@@ -30,8 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",   
+    "deploy": "gh-pages -d build"   
   },
   "eslintConfig": {
     "extends": [
